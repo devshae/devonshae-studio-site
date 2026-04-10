@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO — update all of these -->
+  <title>Studio Name — Brand & Web Design</title>
+  <meta name="description" content="Brand identity and web design studio. We build distinctive digital experiences." />
+  <meta name="author" content="Your Name" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Studio Name — Brand & Web Design" />
+  <meta property="og:description" content="Brand identity and web design studio." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com" />
+  <meta property="og:image" content="https://yourdomain.com/assets/images/og-image.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+  <!-- Fonts — swap these out with your Figma font choices -->
+  <!-- Example using Google Fonts (replace with self-hosted from /assets/fonts/ for perf) -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=YourFont&display=swap" rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────── -->
+  <nav class="nav">
+    <a href="/" class="nav__logo">Studio</a>
+    <ul class="nav__links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ── Hero ──────────────────────────────────────────── -->
+    <section class="section hero">
+      <div class="container">
+        <h1 data-fade>Brand &amp;<br>Web Design</h1>
+        <p data-fade>
+          <!-- Your tagline here — pulled from Figma copy -->
+          We craft distinctive brand identities and web experiences
+          for founders who want to stand out.
+        </p>
+        <a href="#work" class="btn btn--accent" data-fade>View Work</a>
+      </div>
+    </section>
+
+    <!-- ── Work / Portfolio ───────────────────────────────── -->
+    <section class="section" id="work">
+      <div class="container">
+        <h2 data-fade>Selected Work</h2>
+        <!-- Portfolio grid goes here — populate once Figma layout is finalized -->
+      </div>
+    </section>
+
+    <!-- ── About ─────────────────────────────────────────── -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 data-fade>About</h2>
+        <p data-fade>
+          <!-- Your about copy -->
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Contact ───────────────────────────────────────── -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 data-fade>Let's Work Together</h2>
+        <a href="mailto:hello@yourdomain.com" class="btn" data-fade>
+          hello@yourdomain.com
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ────────────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Studio Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/js/script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
