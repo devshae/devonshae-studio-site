@@ -1,0 +1,61 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  padding-top: 70px; /* nav height */
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: var(--space-xl);
+  padding-inline: var(--gutter);
+  overflow: hidden;
+}
+
+/* Flipped background image */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/ds_hero_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  transform: scaleX(-1);
+  z-index: 0;
+}
+
+.textWrap {
+  position: relative;
+  z-index: 1;
+  max-width: 55ch;
+}
+
+.sunIcon {
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+
+.headline {
+  font-family: var(--ff-sub);
+  font-size: clamp(2.8rem, 5.5vw, 5.5rem);
+  font-weight: 400;
+  line-height: 1.05;
+  color: var(--clr-brown);
+  text-transform: uppercase;
+}
+
+.sub {
+  font-family: var(--ff-accent);
+  font-style: italic;
+  font-size: clamp(2.2rem, 4.5vw, 4.5rem);
+  color: var(--clr-brown);
+  opacity: 0.85;
+  text-transform: none;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 80svh;
+    padding-bottom: var(--space-lg);
+  }
+  .hero::before {
+    background-position: right center;
+  }
+}

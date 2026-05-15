@@ -1,0 +1,68 @@
+.testimonials {
+  background: var(--clr-bg);
+  padding: var(--space-xl) var(--gutter);
+  max-width: var(--max-w);
+  margin-inline: auto;
+}
+
+/* Luminaire script heading — lowercase, large, centered */
+.heading {
+  font-family: var(--ff-accent);
+  text-transform: none;
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--clr-brown);
+  text-align: center;
+  margin-bottom: var(--space-xl);
+  line-height: 1.2;
+  /* Luminaire renders small — bump up slightly */
+  letter-spacing: 0.01em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  align-items: start;
+}
+
+/* Stagger: center card drops down */
+.grid .card:nth-child(2) { margin-top: var(--space-xl); }
+
+.card {
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg) var(--space-md);
+}
+
+/* Colors from Figma: orange, olive, blue */
+.orange { background: var(--clr-orange); color: white; }
+.olive  { background: var(--clr-olive);  color: white; }
+.blue   { background: var(--clr-blue);   color: var(--clr-brown); }
+
+.quote {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-loose);
+  margin-bottom: var(--space-md);
+}
+
+.footer { display: flex; flex-direction: column; gap: var(--space-2xs); }
+
+.name {
+  font-family: var(--ff-body);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--ls-wider);
+  font-style: normal;
+}
+.role {
+  font-size: var(--fs-xs);
+  opacity: 0.65;
+  letter-spacing: var(--ls-wide);
+}
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+  .grid .card:nth-child(2) { margin-top: 0; }
+}

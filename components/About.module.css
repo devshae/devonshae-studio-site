@@ -1,0 +1,62 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: var(--space-xl);
+  padding: var(--space-xl) var(--gutter);
+  background-image: url('/images/striped_bg_blue.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.content h2 {
+  font-family: var(--ff-sub);
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--clr-brown);
+}
+
+/* "Sunday morning" in Luminaire script */
+.script {
+  font-family: var(--ff-accent);
+  text-transform: none;
+  font-size: clamp(2.2rem, 4.2vw, 3.6rem);
+  font-weight: 400;
+  color: var(--clr-brown);
+  display: inline;
+  line-height: 1.1;
+}
+
+.content p {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-loose);
+  color: var(--clr-ink-muted);
+  max-width: 50ch;
+}
+
+/* Photo */
+.imageWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: var(--radius-md);
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .about { grid-template-columns: 1fr; }
+  .imageWrap { display: none; }
+}

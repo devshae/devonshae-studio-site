@@ -1,0 +1,23 @@
+.intro {
+  padding: var(--space-xl) var(--gutter);
+  max-width: 900px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.intro p {
+  font-family: var(--ff-sub);
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  line-height: var(--lh-snug);
+  color: var(--clr-brown);
+  text-transform: uppercase;
+}
+
+.accent {
+  font-family: var(--ff-accent);
+  font-style: italic;
+  font-size: clamp(2rem, 3.8vw, 3.2rem);
+  color: var(--clr-orange);
+  text-transform: none;
+  display: inline-block;
+}
