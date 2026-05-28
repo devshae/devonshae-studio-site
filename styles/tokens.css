@@ -75,7 +75,7 @@
   --ff-body:      'Montserrat', Arial, sans-serif;        /* paragraphs, UI */
 
   /* Font sizes — fluid where appropriate */
-  --fs-hero:   clamp(3rem, 8vw, 6.5rem);    /* h1 / hero */
+  --fs-hero:   clamp(1rem, 2.5vw, 1.5rem);    /* h1 / hero */
   --fs-h2:     clamp(2rem, 5vw, 3rem);       /* section titles */
   --fs-h3:     clamp(1.25rem, 2.5vw, 1.5rem);
   --fs-h4:     clamp(2rem, 5vw, 4rem);       /* large callout */
