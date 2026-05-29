@@ -27,7 +27,7 @@
 .storyContent p {
   font-size: var(--fs-sm);
   line-height: var(--lh-loose);
-  color: var(--clr-ink-muted);
+  color: var(--clr-brown);
   margin-bottom: var(--space-md);
   max-width: 50ch;
 }
@@ -53,7 +53,7 @@
 }
 .valueIcon { opacity: 0.7; }
 .valueCard h3 { font-family: var(--ff-sub); font-size: 1.25rem; }
-.valueCard p  { font-size: var(--fs-sm); line-height: var(--lh-loose); color: var(--clr-ink-muted); }
+.valueCard p  { font-size: var(--fs-sm); line-height: var(--lh-loose); color: var(--clr-brown); }
 
 @media (max-width: 768px) {
   .story { grid-template-columns: 1fr; }

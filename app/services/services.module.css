@@ -80,7 +80,7 @@
 .desc {
   font-size: var(--fs-sm);
   line-height: var(--lh-loose);
-  color: var(--clr-ink-muted);
+  color: var(--clr-brown);
   max-width: 52ch;
   margin-bottom: var(--space-lg);
 }
@@ -208,7 +208,7 @@
   margin-bottom: var(--space-sm);
 }
 .step h3 { font-family: var(--ff-sub); color: white; font-size: 1.25rem; margin-bottom: var(--space-sm); }
-.step p  { font-size: var(--fs-sm); line-height: var(--lh-loose); color: var(--clr-ink-muted); }
+.step p  { font-size: var(--fs-sm); line-height: var(--lh-loose); color: var(--clr-surface); }
 
 @media (max-width: 900px) {
   .detail,

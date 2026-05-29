@@ -30,14 +30,15 @@
   font-size: clamp(2.2rem, 4.2vw, 3.6rem);
   font-weight: 400;
   color: var(--clr-brown);
-  display: inline;
-  line-height: 1.1;
+  display: block;
+  line-height: 1;
+  margin-top: -0.2em;
 }
 
 .content p {
   font-size: var(--fs-sm);
   line-height: var(--lh-loose);
-  color: var(--clr-ink-muted);
+  color: var(--clr-brown);
   max-width: 50ch;
 }
 

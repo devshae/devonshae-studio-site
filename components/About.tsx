@@ -7,9 +7,8 @@ export default function About() {
     <section className={styles.about} id="about">
       <div className={styles.content}>
         <h2>
-          Design that feels like your
+          Design that feels like your favorite
           <br />
-          favorite{' '}
           <span className={styles.script}>Sunday morning</span>
         </h2>
         <p>

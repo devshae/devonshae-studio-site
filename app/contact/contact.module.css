@@ -17,7 +17,7 @@
 .intro {
   font-size: var(--fs-sm);
   line-height: var(--lh-loose);
-  color: var(--clr-ink-muted);
+  color: var(--clr-brown);
   max-width: 42ch;
   margin-bottom: var(--space-lg);
 }
@@ -58,7 +58,7 @@
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: var(--ls-wider);
-  color: var(--clr-ink-muted);
+  color: var(--clr-brown);
 }
 
 .field input,
@@ -90,7 +90,7 @@
   padding: var(--space-xl) 0;
 }
 .success h2 { font-family: var(--ff-sub); }
-.success p  { color: var(--clr-ink-muted); }
+.success p  { color: var(--clr-brown); }
 
 @media (max-width: 768px) {
   .page { grid-template-columns: 1fr; }

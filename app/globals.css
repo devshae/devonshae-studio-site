@@ -7,9 +7,9 @@ html { scroll-behavior: smooth; }
 body {
   font-family: var(--ff-body);
   background: var(--clr-bg);
-  color: var(--clr-ink);
+  color: var(--clr-brown);
   font-size: var(--fs-body);
-  font-weight: 400;
+  font-weight: 500;
   line-height: var(--lh-normal);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -66,7 +66,7 @@ p { max-width: 65ch; }
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: var(--ls-widest);
-  color: var(--clr-ink-muted);
+  color: var(--clr-brown);
 }
 
 /* ---- REVEAL ANIMATION ---- */

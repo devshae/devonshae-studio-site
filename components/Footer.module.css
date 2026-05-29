@@ -2,29 +2,30 @@
   background: var(--clr-brown);
   color: var(--clr-cream);
   /* Scalloped top edge — cream bumps punching up from brown */
-  padding-top: calc(var(--space-xl) + 24px);
+  padding-top: var(--space-xl);
   padding-bottom: var(--space-md);
   padding-inline: var(--gutter);
   position: relative;
 }
 
-/* Scalloped top border — cream bumps along the top edge of the footer */
+/* Scalloped top border — brown bumps reaching up into the section above */
 .footer::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: -40px;
   left: 0;
   right: 0;
   height: 40px;
   background: radial-gradient(
-    circle at 50% 0%,
-    var(--clr-bg) 69%,
+    circle at 50% 100%,
+    var(--clr-brown) 69%,
     transparent 70%
   );
   background-size: 40px 40px;
   background-repeat: repeat-x;
-  background-position: 0 0;
+  background-position: 0 100%;
   pointer-events: none;
+  z-index: 10;
 }
 
 .inner {
@@ -74,7 +75,7 @@
   margin-inline: auto;
   font-family: var(--ff-body);
   font-size: var(--fs-xs);
-  color: var(--clr-ink-muted);
+  color: var(--clr-brown);
   letter-spacing: var(--ls-wide);
   text-align: center;
   border-top: 1px solid rgba(255,255,255,0.08);

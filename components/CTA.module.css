@@ -3,7 +3,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 80vh;
-  overflow: hidden;
   background: var(--clr-bg);
 }
 
@@ -16,6 +15,7 @@
   justify-content: center;
   gap: var(--space-md);
   padding: var(--space-xl) var(--gutter);
+  background: rgba(255, 252, 243, 0.88);
 }
 
 .content h2 {
@@ -30,14 +30,14 @@
 .content p {
   font-size: var(--fs-sm);
   line-height: var(--lh-loose);
-  color: var(--clr-ink-muted);
+  color: var(--clr-brown);
   max-width: 46ch;
 }
 
-/* Photo side */
+/* Photo covers the full section as background */
 .imageWrap {
-  position: relative;
-  /* fill the grid cell */
+  position: absolute;
+  inset: 0;
 }
 
 /* Scalloped bottom edge — cream bumps along the bottom, transitioning to footer's brown */

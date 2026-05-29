@@ -21,32 +21,55 @@
   z-index: 0;
 }
 
-.textWrap {
-  position: relative;
+/* Orange band at the bottom with scalloped top edge */
+.band {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--clr-orange);
+  padding: var(--space-lg) var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   z-index: 1;
-  max-width: 55ch;
 }
 
-.sunIcon {
-  display: block;
-  margin-bottom: var(--space-sm);
+/* Scalloped top — orange bumps reaching up into the photo */
+.band::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: radial-gradient(
+    circle at 50% 100%,
+    var(--clr-orange) 69%,
+    transparent 70%
+  );
+  background-size: 40px 40px;
+  background-repeat: repeat-x;
+  background-position: 0 100%;
 }
 
 .headline {
   font-family: var(--ff-sub);
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-size: clamp(1.4rem, 3.5vw, 2.6rem);
   font-weight: 400;
-  line-height: 1.05;
-  color: var(--clr-brown);
+  line-height: 1;
+  color: white;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .sub {
   font-family: var(--ff-accent);
   font-style: italic;
-  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
-  color: var(--clr-brown);
-  opacity: 0.85;
+  font-size: clamp(1.8rem, 4.5vw, 3.2rem);
+  line-height: 1;
+  color: white;
   text-transform: none;
 }
 
